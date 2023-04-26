@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker and Journal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Mood Tracker and Journal</h1>
+    <div id="entryForm">
+      <label for="entryDate">Date:</label>
+      <input type="date" id="entryDate" />
+      <br />
+      <label for="mood">Mood:</label>
+      <select id="mood">
+        <option value="1">😢 Very Sad</option>
+        <option value="2">😞 Sad</option>
+        <option value="3">😐 Neutral</option>
+        <option value="4">😃 Happy</option>
+        <option value="5">😄 Very Happy</option>
+      </select>
+      <br />
+      <label for="journalEntry">Journal Entry:</label>
+      <br />
+      <textarea id="journalEntry" rows="4" cols="50"></textarea>
+      <br />
+      <button id="saveEntry">Save</button>
+    </div>
+    <div id="savedEntriesContainer">
+      <h2>Saved Entries</h2>
+      <ul id="savedEntriesList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
